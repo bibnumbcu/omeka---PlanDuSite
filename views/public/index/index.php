@@ -31,7 +31,7 @@
 
 
 <?php  if (get_option('plan_du_site_add_simple_page_plugin')) :?>
-<h2><?php echo get_option('plan_du_site_exhibit_label'); ?></h2>
+<h2><?php echo get_option('plan_du_site_simple_pages_label'); ?></h2>
 <ul>
 <?php foreach (loop('simplepages') as $page): ?>
     <li><a href="<?php echo html_escape(record_url($page)); ?>"><?php echo metadata($page, 'title'); ?>  </a>  </li>
