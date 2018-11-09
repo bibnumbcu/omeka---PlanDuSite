@@ -1,7 +1,7 @@
 # omeka---PlanDuSite
 Résumé
 ------
-Ce plugin a ajouter à omeka permet d'avoir une page de plan de site
+Ce plugin à ajouter à omeka permet d'avoir une page de plan de site avec la liste des collections et d'autres options d'affichage à configurer dans la partie admin.
 
 Installation
 ------------
@@ -17,8 +17,3 @@ On peut ajouter :
 * l'affichage des pages du plugin Simple Pages 
 * l'affichage des Expositions du plugin Exhibit Builder.
 * l'affichage de la page de contact du plugin simple contact form
-
-TODO
-----
-* ajouter un fichier de traduction en français
-
