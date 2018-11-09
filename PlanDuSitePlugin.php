@@ -11,10 +11,13 @@ define('PLAN_DU_SITE_PAGE_PATH', 'plandusite');
 define('PLAN_DU_SITE_PAGE_TITLE', 'Plan du site');
 define('PLAN_DU_SITE_ADD_TO_MAIN_NAVIGATION', 1);
 define('PLAN_DU_SITE_ADD_MAIN_NAVIGATION_MENU', 0);
+define('PLAN_DU_SITE_EXHIBIT_LABEL', 'Expositions');
 define('PLAN_DU_SITE_ADD_EXHIBIT_BUILDER_PLUGIN', 0);
 define('PLAN_DU_SITE_ADD_COLLECTION_TREE_PLUGIN', 0);
-define('PLAN_DU_SITE_ADD_SIMPLE_PAGE_PLUGIN', 0);
+define('PLAN_DU_SITE_SIMPLE_PAGES_LABEL', 'Other pages');
+define('PLAN_DU_SITE_ADD_SIMPLE_PAGES_PLUGIN', 0);
 define('PLAN_DU_SITE_ADD_SIMPLE_CONTACT_FORM_PLUGIN', 0);
+
 
 class PlanDuSitePlugin extends Omeka_Plugin_AbstractPlugin{
 
@@ -37,9 +40,11 @@ class PlanDuSitePlugin extends Omeka_Plugin_AbstractPlugin{
         set_option('plan_du_site_page_title', PLAN_DU_SITE_PAGE_TITLE);
         set_option('plan_du_site_add_to_main_navigation', PLAN_DU_SITE_ADD_TO_MAIN_NAVIGATION);
         set_option('plan_du_site_add_main_navigation_menu', PLAN_DU_SITE_ADD_MAIN_NAVIGATION_MENU);
+        set_option('plan_du_site_exhibit_label', PLAN_DU_SITE_EXHIBIT_LABEL);
         set_option('plan_du_site_add_exhibit_builder_plugin', PLAN_DU_SITE_ADD_EXHIBIT_BUILDER_PLUGIN);
         set_option('plan_du_site_add_collection_tree_plugin', PLAN_DU_SITE_ADD_COLLECTION_TREE_PLUGIN);
-        set_option('plan_du_site_add_simple_page_plugin', PLAN_DU_SITE_ADD_SIMPLE_PAGE_PLUGIN);
+        set_option('plan_du_site_simple_pages_label', PLAN_DU_SITE_SIMPLE_PAGES_LABEL);
+        set_option('plan_du_site_add_simple_pages_plugin', PLAN_DU_SITE_ADD_SIMPLE_PAGES_PLUGIN);
         set_option('plan_du_site_add_simple_contact_form_plugin', PLAN_DU_SITE_ADD_SIMPLE_CONTACT_FORM_PLUGIN);        
     }
 
@@ -49,9 +54,11 @@ class PlanDuSitePlugin extends Omeka_Plugin_AbstractPlugin{
         delete_option('plan_du_site_page_title');    
         delete_option('plan_du_site_add_to_main_navigation');
         delete_option('plan_du_site_add_main_navigation_menu');
+        delete_option('plan_du_site_exhibit_label');
         delete_option('plan_du_site_add_exhibit_builder_plugin');
         delete_option('plan_du_site_add_collection_tree_plugin');
-        delete_option('plan_du_site_add_simple_page_plugin');
+        delete_option('plan_du_site_add_simple_pages_plugin');
+        delete_option('plan_du_site_simple_pages_label');
         delete_option('plan_du_site_add_simple_contact_form_plugin');  
     }
 
@@ -86,9 +93,11 @@ class PlanDuSitePlugin extends Omeka_Plugin_AbstractPlugin{
         set_option('plan_du_site_page_title', $post['plan_du_site_page_title']);        
         set_option('plan_du_site_add_to_main_navigation', $post['plan_du_site_add_to_main_navigation']);
         set_option('plan_du_site_add_main_navigation_menu', $post['plan_du_site_add_main_navigation_menu']); 
+        set_option('plan_du_site_exhibit_label', $post['plan_du_site_exhibit_label']); 
         set_option('plan_du_site_add_exhibit_builder_plugin', $post['plan_du_site_add_exhibit_builder_plugin']); 
         set_option('plan_du_site_add_collection_tree_plugin', $post['plan_du_site_add_collection_tree_plugin']);
-        set_option('plan_du_site_add_simple_page_plugin', $post['plan_du_site_add_simple_page_plugin']); 
+        set_option('plan_du_site_add_simple_pages_plugin', $post['plan_du_site_add_simple_pages_plugin']); 
+        set_option('plan_du_site_simple_pages_label', $post['plan_du_site_simple_pages_label']); 
         set_option('plan_du_site_add_simple_contact_form_plugin', $post['plan_du_site_add_simple_contact_form_plugin']); 
     }
 
